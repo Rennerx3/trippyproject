@@ -1,0 +1,68 @@
+@font-face {
+    font-family:cloud ;
+    src: url(../cloud-candy/cloud.ttf);
+}
+
+
+//RESET
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+//import
+
+
+div{background-image: url(../img/fondoindex.png);
+    height: 100vh;
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 5px 0px 5px;
+        nav{background-color: #FFDB58;
+            border: 1px solid rgba(0, 0, 0, 0.801);
+            ul{display: flex; 
+                flex-direction: row;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        background-color: rgb(255, 255, 117);  
+                        li{
+                            color:rgb(112, 128, 144) ;
+                        }
+                    }
+                }
+                li{ 
+                    color: rgba(0, 0, 0, 0.671);
+                    font-weight: bold;
+                    margin: 1rem; 
+                    
+                }
+            }
+        }
+    } 
+    section{display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-family: cloud;
+            font-size: 200px;
+            
+            color: rgb(112, 128, 144);
+            padding-top: 15px;
+        }
+        .yellow{
+            
+            color: rgb(112, 128, 144);
+        }
+        button{
+           
+        }
+    } 
+}
+
