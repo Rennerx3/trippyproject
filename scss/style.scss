@@ -2,7 +2,20 @@
     font-family:cloud ;
     src: url(../cloud-candy/cloud.ttf);
 }
+@font-face {
+    font-family: cloud2;
+    src: url(../cloud-candy/cloud2.ttf);
+}
+@font-face {
+    font-family: cloud3;
+    src: url(../cloud-candy/cloud3.TTF);
+}
+@font-face {
+    font-family: cloud4;
+    src: url(../cloud-candy/cloud4.ttf);
+}
 
+@import "_mixin"; @import "_variables";
 
 //RESET
 
@@ -14,15 +27,14 @@
 //import
 
 
-div{background-image: url(../img/fondoindex.png);
-    height: 100vh;
+.inicio{background-image: url(../img/fondoindex.png);
     header{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 5px 0px 5px;
+        padding: 0.3rem 0.3rem 0rem 0.3rem;
         nav{background-color: #FFDB58;
             border: 1px solid rgba(0, 0, 0, 0.801);
             ul{display: flex; 
@@ -54,15 +66,66 @@ div{background-image: url(../img/fondoindex.png);
             font-size: 200px;
             
             color: rgb(112, 128, 144);
-            padding-top: 15px;
+            padding-top: 1rem;
         }
         .yellow{
             
             color: rgb(112, 128, 144);
         }
         button{
-           
+           background-color: #ffc107;
+           font-family: cloud4;
+           font-size: 30px;
+           border-radius: 100px;
+           padding: 0.75rem;
+           margin-bottom: 2rem;
+           border: rgb(0, 0, 0) solid 1px;
         }
     } 
+}
+
+//Carrousel Propio
+.carrousel{
+    width: 100%;
+    @include neo(1, 1em);
+    overflow: hidden;
+    .grande{
+        width: 200%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        @include neo(1, 1em);
+
+        transition: all .5s ease;
+        transform: translateX(0%)
+    }
+    .img{
+        width: calc(120% / 2 - 2em);
+        min-height: 10vh;
+        @include neo(1, 1em);
+    }
+    .puntos{
+        list-style: none;
+        width: 100%;
+        @include neo(1, 1em);
+        padding: .4em;
+        margin: 0.5em 0 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .punto{
+        width: 2em;
+        height: 2em;
+        @include neo(1, 1em);
+        margin: 0em 0.2em 0em 0.2em;
+        background-color: black;
+        border-radius: 15rem;
+    }
+    .activo{
+        background-color: #FFDB58;
+    }
 }
 
