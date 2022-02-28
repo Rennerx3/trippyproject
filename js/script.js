@@ -1,14 +1,9 @@
 'use strict'
-'use strict'
+
 
 const grande    = document.querySelector('.grande')
 const punto     = document.querySelectorAll('.punto')
 
-// Cuando CLICK en punto
-    // Saber la posición de ese punto
-    // Aplicar un transform translateX al grande
-    // QUITAR la clase activo de TODOS puntos
-    // AÑADIR la clase activo al punto que hemos hecho CLICK
 
 // Recorrer TODOS los punto
 punto.forEach( ( cadaPunto , i )=> {
@@ -33,3 +28,11 @@ punto.forEach( ( cadaPunto , i )=> {
 
     })
 })
+
+//Card
+
+const card = document.querySelector(".card__inner");
+
+card.addEventListener("click", function (e) {
+  card.classList.toggle('is-flipped');
+});
