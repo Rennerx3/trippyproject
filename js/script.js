@@ -31,8 +31,12 @@ punto.forEach( ( cadaPunto , i )=> {
 
 //Card
 
-const card = document.querySelector(".card__inner");
+const card = document.getElementsByClassName("card__inner");
 
-card.addEventListener("click", (e) => {
-  card.classList.toggle('is-flipped');
+card.forEach(( _value , i) => {
+
+i.addEventListener("click", () => {
+  i.classList.toggle('is-flipped');
+})
+
 });

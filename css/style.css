@@ -131,12 +131,18 @@
   .carrousel .activo {
     background-color: #FFDB58; }
 
+#flexProduct {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+
 .card {
   margin: 50px;
   width: 400px;
   height: 400px;
   perspective: 1000px; }
   .card .card__inner {
+    margin: 10px;
     width: 100%;
     height: 100%;
     transition: transform 1s;
@@ -170,8 +176,8 @@
           display: block;
           object-fit: cover;
           width: 100%;
-          height: 25vh;
-          padding-bottom: 20px; }
+          height: 30vh;
+          padding-bottom: 10px; }
         .card .card__inner .card__face--back .card__content h2 {
           color: black;
           font-size: 32px;
@@ -189,8 +195,8 @@
       background-color: #ffd438;
       z-index: -1; }
     .card .card__inner .card__body {
-      padding: 30px;
-      margin-top: 32px;
+      padding: 15px;
+      margin-top: 17px;
       text-align: center; }
       .card .card__inner .card__body h3 {
         color: var(--dark);
@@ -203,5 +209,5 @@
         padding: 0.75rem;
         border: black solid 1px; }
 
-.card__inner.is-flipped {
+.is-flipped {
   transform: rotateY(180deg); }
