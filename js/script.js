@@ -33,6 +33,6 @@ punto.forEach( ( cadaPunto , i )=> {
 
 const card = document.querySelector(".card__inner");
 
-card.addEventListener("click", function (e) {
+card.addEventListener("click", (e) => {
   card.classList.toggle('is-flipped');
 });
