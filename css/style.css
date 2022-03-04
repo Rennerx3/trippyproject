@@ -34,7 +34,8 @@
   margin: 0; }
 
 .inicio {
-  background-image: url(../img/fondoindex.png); }
+  background-image: url(../img/fondoindex.png);
+  height: 100vh; }
   .inicio header {
     display: flex;
     flex-direction: row;
@@ -133,12 +134,13 @@
 
 #flexProduct {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center; }
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly; }
 
 .card {
   margin: 50px;
-  width: 400px;
+  width: 350px;
   height: 400px;
   perspective: 1000px; }
   .card .card__inner {
@@ -209,5 +211,5 @@
         padding: 0.75rem;
         border: black solid 1px; }
 
-.is-flipped {
+.card__inner.is-flipped {
   transform: rotateY(180deg); }

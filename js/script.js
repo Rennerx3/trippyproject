@@ -1,20 +1,20 @@
 'use strict'
 
 
-const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
+const grande    = document.querySelector('.grande');
+const punto     = document.querySelectorAll('.punto');
 
 
 // Recorrer TODOS los punto
 punto.forEach( ( cadaPunto , i )=> {
+    
     // Asignamos un CLICK a cadaPunto
     punto[i].addEventListener('click',()=>{
-
+       
         // Guardar la posición de ese PUNTO
         let posicion  = i
         // Calculando el espacio que debe DESPLAZARSE el GRANDE
         let operacion = posicion * -50
-
         // MOVEMOS el grand
         grande.style.transform = `translateX(${ operacion }%)`
 
@@ -31,12 +31,18 @@ punto.forEach( ( cadaPunto , i )=> {
 
 //Card
 
-const card = document.getElementsByClassName("card__inner");
 
-card.forEach(( _value , i) => {
 
-i.addEventListener("click", () => {
-  i.classList.toggle('is-flipped');
-})
+for(var i = 0; i <= 5; i++){
+    document.querySelectorAll(".card__inner")[i].onclick=card
+}
 
-});
+function card(){
+    this.classList.toggle('is-flipped');
+}
+
+
+
+
+
+

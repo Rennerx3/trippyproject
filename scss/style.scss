@@ -28,6 +28,7 @@
 
 
 .inicio{background-image: url(../img/fondoindex.png);
+    height: 100vh;
     header{
         display: flex;
         flex-direction: row;
@@ -134,13 +135,14 @@
 
 #flexProduct{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .card {
     margin: 50px;
-    width: 400px;
+    width: 350px;
     height: 400px;
     perspective: 1000px;
     .card__inner {
@@ -228,10 +230,9 @@
         }  
       }
 
-  .is-flipped {
-    transform: rotateY(180deg);
-  }
-
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
 
 
   
