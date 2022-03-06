@@ -35,13 +35,27 @@ punto.forEach( ( cadaPunto , i )=> {
 
 for(var i = 0; i <= 5; i++){
     document.querySelectorAll(".card__inner")[i].onclick=card
-}
 
-function card(){
+    function card(){
     this.classList.toggle('is-flipped');
 }
+}
 
 
+
+//Map
+
+function iniciarMap(){
+    var coord = {lat:-34.903764 ,lng: -56.1251888};
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 10,
+      center: coord
+    });
+    var marker = new google.maps.Marker({
+      position: coord,
+      map: map
+    });
+}
 
 
 

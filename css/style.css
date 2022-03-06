@@ -35,6 +35,7 @@
 
 .inicio {
   background-image: url(../img/fondoindex.png);
+  background-attachment: fixed;
   height: 100vh; }
   .inicio header {
     display: flex;
@@ -213,3 +214,28 @@
 
 .card__inner.is-flipped {
   transform: rotateY(180deg); }
+
+#map {
+  height: 80vh;
+  width: 30%;
+  margin: 10px 0px 10px 0px; }
+
+#flexUb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+  background-image: url(../img/imgub.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#textUb {
+  width: 50%;
+  text-align: center; }
+  #textUb h1 {
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 20px 0px; }
+  #textUb p {
+    font-size: 20px; }
