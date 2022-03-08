@@ -38,6 +38,7 @@ for(var i = 0; i <= 5; i++){
 
     function card(){
     this.classList.toggle('is-flipped');
+    console.log(this);
 }
 }
 
