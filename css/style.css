@@ -33,6 +33,76 @@
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif; }
 
+@media (max-width: 575px) {
+  #yellow {
+    font-size: 7rem; }
+  nav {
+    display: none; }
+  #flexUb {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%; }
+    #flexUb #map {
+      width: 70%; }
+    #flexUb #textUb {
+      width: 90%; }
+      #flexUb #textUb #titutloUb {
+        font-size: 2.5rem;
+        padding: 15px; }
+      #flexUb #textUb p {
+        width: 100%; }
+  .carrousel {
+    width: 100%;
+    color: var(--negro);
+    transition: all .4s ease;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden; }
+    .carrousel .grande {
+      width: 200%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--negro);
+      transition: all .4s ease;
+      background-color: var(--blanco);
+      box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      transition: all .5s ease;
+      transform: translateX(0%); }
+    .carrousel .img {
+      width: calc(120% / 2 - 2em);
+      min-height: 10vh;
+      color: var(--negro);
+      transition: all .4s ease;
+      background-color: var(--blanco);
+      box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; }
+    .carrousel .puntos {
+      list-style: none;
+      width: 100%;
+      color: var(--negro);
+      transition: all .4s ease;
+      background-color: var(--blanco);
+      box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      padding: .4em;
+      margin: 0.5em 0 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+    .carrousel .punto {
+      width: 2em;
+      height: 2em;
+      color: var(--negro);
+      transition: all .4s ease;
+      background-color: var(--blanco);
+      box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      margin: 0em 0.2em 0em 0.2em;
+      background-color: black;
+      border-radius: 15rem; }
+    .carrousel .activo {
+      background-color: #FFDB58; } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -237,7 +307,7 @@
 #textUb {
   width: 50%;
   text-align: center; }
-  #textUb h1 {
+  #textUb h4 {
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px 0px 20px 0px; }

@@ -20,6 +20,7 @@
 }
 
 @import "_mixin.scss"; @import "_variables.scss";
+@import "_medias.scss";
 
 
 //RESET
@@ -263,7 +264,7 @@
 #textUb{
     width: 50%;
     text-align: center;
-    h1{ 
+    h4{ 
         font-size: 70px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0px 0px 20px 0px;
@@ -327,3 +328,4 @@ footer{
         }
     }
 }
+

@@ -1,0 +1,72 @@
+@media(max-width: 575px){
+    
+    #yellow {font-size: 7rem;}
+    nav{display: none;}
+    #flexUb{display:flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    #map{
+        width: 70%;
+    }
+    #textUb{
+        width: 90%;
+        #titutloUb{
+            font-size: 2.5rem;
+            
+            padding: 15px;
+        }
+        p{
+            width: 100%;
+        }
+    }
+
+
+}
+
+//carrousel
+
+.carrousel{
+    width: 100%;
+    @include neo(1, 1em);
+    overflow: hidden;
+    .grande{
+        width: 200%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        @include neo(1, 1em);
+
+        transition: all .5s ease;
+        transform: translateX(0%)
+    }
+    .img{
+        width: calc(120% / 2 - 2em);
+        min-height: 10vh;
+        @include neo(1, 1em);
+    }
+    .puntos{
+        list-style: none;
+        width: 100%;
+        @include neo(1, 1em);
+        padding: .4em;
+        margin: 0.5em 0 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .punto{
+        width: 2em;
+        height: 2em;
+        @include neo(1, 1em);
+        margin: 0em 0.2em 0em 0.2em;
+        background-color: black;
+        border-radius: 15rem;
+    }
+    .activo{
+        background-color: #FFDB58;
+    }
+}
+   
+}
